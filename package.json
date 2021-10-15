@@ -21,5 +21,8 @@
     "svelte": "^3.42.6",
     "svelte-preprocess": "^4.9.8"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "modern-normalize": "^1.1.0"
+  }
 }

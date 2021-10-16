@@ -1,0 +1,6 @@
+.has-subtext {
+    margin-bottom: 0;
+    & + p  {
+        margin-top: 0.25em;
+    }
+}

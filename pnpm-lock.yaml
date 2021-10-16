@@ -6,6 +6,8 @@ specifiers:
   eslint: ^8.0.0
   eslint-config-prettier: ^8.3.0
   eslint-plugin-svelte3: ^3.2.1
+  hack-font: ^3.3.0
+  modern-normalize: ^1.1.0
   postcss: ^8.3.9
   prettier: ^2.4.1
   prettier-plugin-svelte: ^2.4.0
@@ -13,8 +15,12 @@ specifiers:
   svelte: ^3.42.6
   svelte-preprocess: ^4.9.8
 
+dependencies:
+  hack-font: 3.3.0
+  modern-normalize: 1.1.0
+
 devDependencies:
-  '@sveltejs/kit': 1.0.0-next.183_sass@1.43.2+svelte@3.43.2
+  '@sveltejs/kit': 1.0.0-next.184_sass@1.43.2+svelte@3.43.2
   autoprefixer: 10.3.7_postcss@8.3.9
   eslint: 8.0.1
   eslint-config-prettier: 8.3.0_eslint@8.0.1
@@ -68,9 +74,9 @@ packages:
       picomatch: 2.3.0
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.183_sass@1.43.2+svelte@3.43.2:
-    resolution: {integrity: sha512-XS115RLu8mQk0wZ33BF6sKHEQD8BUFhErfxJhEkXoR4m2bW1h1JBLKHaZ1qnG9eAPkalmccCXDMxJjuYVCh/oQ==}
-    engines: {node: ^12.20 || >=14.13}
+  /@sveltejs/kit/1.0.0-next.184_sass@1.43.2+svelte@3.43.2:
+    resolution: {integrity: sha512-bQNka3td/OMmnbDEzUTmb3czPgt/y93WOyYiT14ORq/qPewoMhEtgPikfboejdZMTJESSq06s43YXmF2MzqSSA==}
+    engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
       svelte: ^3.43.0
@@ -748,6 +754,10 @@ packages:
     resolution: {integrity: sha512-qkIilPUYcNhJpd33n0GBXTB1MMPp14TxEsEs0pTrsSVucApsYzW5V+Q8Qxhik6KU3evy+qkAAowTByymK0avdg==}
     dev: true
 
+  /hack-font/3.3.0:
+    resolution: {integrity: sha512-RohrcAr3UaKiIoxDlOytCjObcUAucfFc6V5fKu6gBrvmvTfIXeBqZwR0Q5kb9qpbluThJWt326LClLKIGiFyug==}
+    dev: false
+
   /has-flag/4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
@@ -897,6 +907,11 @@ packages:
     dependencies:
       minimist: 1.2.5
     dev: true
+
+  /modern-normalize/1.1.0:
+    resolution: {integrity: sha512-2lMlY1Yc1+CUy0gw4H95uNN7vjbpoED7NNRSBHE25nWfLBdmMzFCsPshlzbxHz+gYMcBEUN8V4pU16prcdPSgA==}
+    engines: {node: '>=6'}
+    dev: false
 
   /mri/1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}

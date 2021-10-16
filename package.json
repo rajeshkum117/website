@@ -23,6 +23,7 @@
     "svelte-preprocess": "^4.9.8"
   },
   "dependencies": {
+    "hack-font": "^3.3.0",
     "modern-normalize": "^1.1.0"
   }
 }

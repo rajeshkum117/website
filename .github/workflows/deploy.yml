@@ -19,18 +19,15 @@ jobs:
       with:
         node-version: 14
         cache: 'npm'
-    - name: Install dependancies
-      run: | 
-        npm install
-        npm run build --if-present
-        cd .svelte-kit/output/client
+    - run: npm install
+    - name: Build
+    - run: npm run build --if-present
     - name: Deploy
-      uses: easingthemes/ssh-deploy@main
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.REMOTE_KEY }}
-        ARGS: "-ravzq --delete"
-        SOURCE: "./"
-        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-        REMOTE_USER: ${{ secrets.REMOTE_USER }}
-        TARGET: ${{ secrets.REMOTE_TARGET }}
-        EXCLUDE: "/dist/, /node_modules/"
+      uses: siva1024/scp-deployer@v1.0
+      with:
+        host: ${{ env.REMOTE_HOST }}
+        username: ${{ env.REMOTE_USER }}
+        key: ${{ env.REMOTE_KEY }}
+        source: build
+        target: ${{ env.REMOTE_TARGET }}
+    

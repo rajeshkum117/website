@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@sveltejs/adapter-static': ^1.0.0-next.21
   '@sveltejs/kit': next
   autoprefixer: ^10.3.7
   eslint: ^8.0.0
@@ -20,6 +21,7 @@ dependencies:
   modern-normalize: 1.1.0
 
 devDependencies:
+  '@sveltejs/adapter-static': 1.0.0-next.21
   '@sveltejs/kit': 1.0.0-next.184_sass@1.43.2+svelte@3.43.2
   autoprefixer: 10.3.7_postcss@8.3.9
   eslint: 8.0.1
@@ -72,6 +74,10 @@ packages:
     dependencies:
       estree-walker: 2.0.2
       picomatch: 2.3.0
+    dev: true
+
+  /@sveltejs/adapter-static/1.0.0-next.21:
+    resolution: {integrity: sha512-B4+QoUVAaANKx+mHntG8SqF45zbj3Ct4Akg/cGauo6COyfKZRhO5OsMa+wPuT2TKJBZC4eEDK0p+p9nyQBkxKQ==}
     dev: true
 
   /@sveltejs/kit/1.0.0-next.184_sass@1.43.2+svelte@3.43.2:

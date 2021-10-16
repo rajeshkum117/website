@@ -25,9 +25,9 @@ jobs:
     - name: Deploy
       uses: siva1024/scp-deployer@v1.0
       with:
-        host: ${{ env.REMOTE_HOST }}
-        username: ${{ env.REMOTE_USER }}
-        key: ${{ env.REMOTE_KEY }}
+        host: ${{ secret.REMOTE_HOST }}
+        username: ${{ secret.REMOTE_USER }}
+        key: ${{ secret.REMOTE_KEY }}
         source: build
-        target: ${{ env.REMOTE_TARGET }}
+        target: ${{ secret.REMOTE_TARGET }}
     

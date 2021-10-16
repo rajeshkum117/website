@@ -20,7 +20,7 @@ jobs:
         node-version: 14
         cache: 'npm'
     - name: Install dependancies
-    - run: | 
+      run: | 
         npm install
         npm run build --if-present
         cd .svelte-kit/output/client

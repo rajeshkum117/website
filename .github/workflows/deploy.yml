@@ -28,6 +28,6 @@ jobs:
         host: ${{ secrets.REMOTE_HOST }}
         username: ${{ secrets.REMOTE_USER }}
         key: ${{ secrets.REMOTE_KEY }}
-        source: build
+        source: ./build
         target: ${{ secrets.REMOTE_TARGET }}
     

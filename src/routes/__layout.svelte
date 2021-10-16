@@ -11,6 +11,7 @@
 	<nav>
 		<a href="/">home</a>
 		<a href="/about">about me</a>
+		<a href="/blog">about me</a>
 	</nav>
     <hr />
 </header>
